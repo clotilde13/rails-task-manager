@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Task page</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1><%= @task.title %></h1>
+
+      <p id="text-box"><%= @task.details %></p>
+
+      <% if @task.completed == false %>
+        <p><i class="far fa-square"></i> This task is not completed</p>
+      <% else %>
+        <p><i class="far fa-check-square"></i> This task is completed</p>
+      <% end %>
+
+      <div class="btn-inline">
+        <%= link_to 'Go back to task list', tasks_path, :class=>"btn btn-submit" %>
+        <%= link_to 'Edit task', edit_path(@task.id), :class=>"btn btn-update" %>
+
+      </div>
+
+    </div>
+  </body>
+</html>
+

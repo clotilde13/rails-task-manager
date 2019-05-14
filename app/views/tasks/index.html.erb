@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tasks index</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Tasks list</h1>
+          <ul>
+            <% @tasks.each do |task|%>
+              <% if task.completed == false %>
+                <li><i class="far fa-square"></i> <%= link_to task.title, task_path(task.id) %>
+                <%= link_to delete_path(task.id), method: :delete, :class=>"red-icon" do %>
+                <i class="fas fa-trash"></i>
+                <% end %></li>
+              <% else %>
+                <li><i class="far fa-check-square"></i> <%= link_to task.title, task_path(task.id) %><%= link_to delete_path(task.id), method: :delete, :class=>"red-icon" do %>
+                <i class="fas fa-trash"></i>
+                <% end %></li>
+              <% end %>
+            <% end %>
+          </ul>
+          <%= link_to 'Create a new task', new_path, :class=>"btn btn-submit" %>
+    </div>
+  </body>
+</html>
+
+
+
+

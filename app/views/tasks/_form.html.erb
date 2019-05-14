@@ -1,0 +1,19 @@
+<%= form_for(@task, :html => {:class => 'form'}) do |f| %>
+  <div class="form">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div class="form">
+    <%= f.label :details %>
+    <%= f.text_area :details, :class=>"text-area" %>
+  </div>
+  <% unless @task.new_record? %>
+    <div class="form">
+      <%= f.label :completed %>
+      <%= f.check_box :completed %>
+    </div>
+  <% end %>
+  <div class="form">
+    <%= f.submit value = "Save", :class=>"btn btn-submit" %>
+  </div>
+<% end %>

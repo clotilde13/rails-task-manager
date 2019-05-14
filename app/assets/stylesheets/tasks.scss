@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://use.fontawesome.com/releases/v5.8.2/css/all.css);
+
+h1, h2, p, li, input, label {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #4375A8;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p, li, input {
+  font-size: 16px;
+  padding: 4px 4px;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  width: 100px;
+  float: left;
+}
+
+input {
+  border: 1px solid   #E8E8E8;
+}
+
+
+.container {
+  margin-left: 24px;
+}
+
+.fa-check-square {
+  color: #72A98F;
+}
+
+.fa-square {
+  color: #EFCA45;
+}
+
+.btn {
+  border-radius: 4px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+}
+
+.btn-submit {
+  background-color: #E9806E;
+}
+
+.btn-update {
+  background-color: #EFCA45;
+}
+
+.form {
+  margin-bottom: 16px;
+}
+
+.btn-inline {
+  display: inline-block;
+}
+
+.red-icon {
+  text-decoration: none;
+  color: #72A98F;
+  padding-left: 16px;
+}
+
+#task_details {
+  width: 300px;
+  height: 200px;
+  border: 1px solid   #E8E8E8;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+#text-box {
+  width: 500px;
+  border-radius: 4px;
+  border: 1px solid   #E8E8E8;
+  background-color: #D1D1D1;
+  padding : 16px 24px;
+}
